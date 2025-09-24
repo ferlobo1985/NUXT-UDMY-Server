@@ -33,4 +33,5 @@
      const {error, pending, data} = await useAsyncData('someData',()=>{
         return $fetch('http://localhost:3004/employees')
      })
+     
 </script>
