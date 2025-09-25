@@ -6,7 +6,7 @@ export default defineEventHandler((event)=>{
         //     statusCode:401,
         //     statusMessage:'Unauthorized'
         // })
-        console.log('Unauthorized access')
+       // console.log('Unauthorized access')
     }   
 
     event.context.user = {
