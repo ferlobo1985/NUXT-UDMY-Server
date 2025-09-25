@@ -13,22 +13,10 @@
       "id": 2
     },
     {
-      "fullname": "Usher Davis 2nd",
-      "position": "Manager",
-      "age": 60,
-      "id": 3
-    },
-    {
       "fullname": "Mark Ronson",
       "position": "Dev",
       "age": 23,
       "id": 4
-    },
-    {
-      "fullname": "Mica Jules",
-      "position": "Manager",
-      "age": 35,
-      "id": 5
     }
   ]
 }

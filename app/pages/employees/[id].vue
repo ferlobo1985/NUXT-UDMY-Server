@@ -11,6 +11,7 @@
     <button class="btn btn-primary" @click="editEmployee">
         Edit employee
     </button>
+    <button class="btn btn-danger" @click="deleteEmployee">Delete employee</button>
 </template>
 
 <script setup>
@@ -21,6 +22,20 @@
     function editEmployee(){
         router.push(`/form/edit/${route.params.id}`)
     }
+
+    // DELETE EMPLOYEE
+    async function deleteEmployee() {
+        try {
+            await $fetch('/api/employees/byid',{
+                method:'DELETE',
+                body:{id: route.params.id}
+            });
+            router.push('/')
+        } catch (error) {
+            console.log('Error deleting employee', error)
+        }
+    }
+
 
     /// GET EMPLOYEE BY ID
     const {error,pending,data} = await useFetch(`/api/employees/byid?id=${route.params.id}`);
