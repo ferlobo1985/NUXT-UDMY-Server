@@ -2,7 +2,7 @@ export default defineNitroPlugin((nitroApp)=>{
 
     nitroApp.hooks.hook('request',async(event)=>{
         try {
-            const result = await $fetch('http://localhost:3004/employees');
+            const result = await getEmployees();
             console.log('Employees', result);
             event.context.employeeList = result
         } catch (error) {
