@@ -26,8 +26,12 @@
         age: null
     });
 
-    function submitForm(){
-        console.log(formData.value)
+    async function submitForm(){
+        const request = await $fetch('/api/employees?example1=yes&example2=no',{
+            method:'post',
+            body:formData.value
+        })
+        console.log(request)
     }
 
 </script>
