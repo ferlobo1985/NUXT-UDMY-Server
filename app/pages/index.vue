@@ -25,15 +25,5 @@
 
 <script setup>
 
-    const {error, pending, data} = await useFetch('http://localhost:3004/employees')
-
-
-    const {data:getEmployee} = await useFetch('/api/employees');
-    
-    const {data:postEmployee} =  await useFetch('/api/employees',{
-        method:'post',
-        body:{test:'test'}
-    })
-    console.log(postEmployee.value)
-     
+    const {error, pending, data} = await useFetch('/api/employees')
 </script>
