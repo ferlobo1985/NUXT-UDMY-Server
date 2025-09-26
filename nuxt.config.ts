@@ -15,7 +15,7 @@ export default defineNuxtConfig({
       }
     }
   },
-  modules: ['@nuxtjs/sitemap'],
+  modules: ['@nuxtjs/sitemap', '@nuxt/image'],
   site:{
     url:'http://localhost:3000/',
     name:'My app'
