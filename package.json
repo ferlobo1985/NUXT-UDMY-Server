@@ -8,9 +8,10 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "jserv":"json-server --watch db.json --port 3004"
+    "jserv": "json-server --watch db.json --port 3004"
   },
   "dependencies": {
+    "@nuxtjs/sitemap": "^7.4.7",
     "bootstrap": "^5.3.8",
     "nuxt": "^4.1.2",
     "vue": "^3.5.21",
