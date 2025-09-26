@@ -7,7 +7,14 @@ export default defineNuxtConfig({
     'bootstrap/dist/css/bootstrap.min.css'
   ],
 
-  experimental:{inlineRouteRules:true},
+  experimental:{
+    inlineRouteRules:true,
+    defaults:{
+      nuxtLink:{
+        prefetch:false
+      }
+    }
+  },
   modules: ['@nuxtjs/sitemap'],
   site:{
     url:'http://localhost:3000/',
