@@ -24,6 +24,10 @@
 </template>
 
 <script setup>
+    defineRouteRules({
+        prerender:true
+    })
+
     const {error, pending, data} = await useFetch('/api/employees');
     // const hello = await $fetch('/hello');
     //console.log(hello)

@@ -16,7 +16,25 @@
       "fullname": "Mark Ronson",
       "position": "Dev",
       "age": 23,
+      "id": 3
+    },
+    {
+      "fullname": "Mike miles",
+      "position": "Manager",
+      "age": 56,
       "id": 4
+    },
+    {
+      "fullname": "Chuck Berry",
+      "position": "Designer",
+      "age": 30,
+      "id": 5
+    },
+    {
+      "fullname": "Mike Myers",
+      "position": "Dev",
+      "age": 20,
+      "id": 6
     }
   ]
 }
